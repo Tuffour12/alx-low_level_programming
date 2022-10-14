@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main - Printing without using printif
- * 
- * Return -Always 0 (Sucessfuly)
+ * main - Entry
+ * Return: Always 0 (Sucessfuly)
  */
 int main(void)
 {	
