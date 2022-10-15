@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -14,7 +15,7 @@ int main(void)
 
 		printf("%d", num);
 
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
