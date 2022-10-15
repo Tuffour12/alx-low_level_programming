@@ -1,1 +1,1 @@
-Positive and negative random
+print both alpha and lower case
