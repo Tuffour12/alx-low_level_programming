@@ -13,9 +13,9 @@ int main(void)
 	char lx;
 
 	for (bs	= 0; bs < 10; bs++)
-		putchar((be % 10) + '0');
-	for (lx = 'a'; le <= 'f'; lx++)
-		putchar(le);
+		putchar((bs % 10) + '0');
+	for (lx = 'a'; lx <= 'f'; lx++)
+		putchar(lx);
 
 	putchar('\n');
 	return (0);
