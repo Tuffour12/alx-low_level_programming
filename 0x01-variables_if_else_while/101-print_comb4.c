@@ -9,10 +9,11 @@
 int main(void)
 {
 	int x, y, z;
+
 	for (x = 0; x < 8; x++)
 	{
 		for (y = x + 1; y < 9; y++)
-		{	
+		{
 			for (z = y + 1; z < 10; z++)
 			{
 				putchar((x % 10) + '0');
@@ -27,7 +28,7 @@ int main(void)
 				putchar(' ');
 
 			}
-		}	
+		}
 
 	}
 	putchar('\n');
