@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * _abs - Print the absolute value
- * @n: the character
+ * @n: the characte
+ *Return: Absolute value
  */
 int _abs(int n)
 {
