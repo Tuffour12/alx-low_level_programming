@@ -33,6 +33,7 @@ void times_table(void)
 			}
 
 			else if (z < 10 && y != 0)
+		
 			{
 				_putchar(' ');
 
