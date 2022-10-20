@@ -17,12 +17,15 @@ void print_times_table(int n)
 				z = (x * y);
 
 				if (y != 0)
+			
 				{
 					_putchar(',');
 
 					_putchar(' ');
 				}
+				
 				if (z < 10 && y != 0)
+				
 				{
 					_putchar(' ');
 
@@ -30,7 +33,9 @@ void print_times_table(int n)
 
 					_putchar((z % 10) + '0');
 				}
+				
 				else if (z >= 10 && z < 100)
+				
 				{
 					_putchar(' ');
 
@@ -38,7 +43,9 @@ void print_times_table(int n)
 
 					_putchar((z % 10) + '0');
 				}
+				
 				else if (z >= 100 && y != 0)
+				
 				{
 					_putchar((z / 100) + '0');
 
@@ -46,10 +53,12 @@ void print_times_table(int n)
 
 					_putchar((z % 10) + '0');
 				}
+				
 				else
 
 					_putchar((z % 10) + '0');
 			}
+			
 			_putchar('\n')
 
 		}
