@@ -22,7 +22,7 @@ void print_diagonal(int n)
 
 	else
 	{
-	
+
 		for (dl = 1; dl <= n; dl++)
 		{
 			for (sp = 1; sp < dl; sp++)
