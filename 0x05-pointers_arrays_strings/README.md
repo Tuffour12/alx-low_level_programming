@@ -1,0 +1,1 @@
+This pointer and arrays
