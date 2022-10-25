@@ -17,11 +17,12 @@ void puts_half(char *str)
 
 	while (str[x] != '\0')
 
+
 		x++;
 
 
 
-		y = x / 2;
+	y = x / 2;
 
 
 
