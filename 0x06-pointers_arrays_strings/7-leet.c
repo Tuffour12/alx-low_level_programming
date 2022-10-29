@@ -22,7 +22,7 @@ char *leet(char *x)
 		{
 			if (x[i] == find[v])
 			{
-				x[i] = replacer[x / 2];
+				x[i] = replacer[v / 2];
 				v = 9;
 			}
 		}
