@@ -15,7 +15,7 @@ char *leet(char *x)
 
 	int replacer[] = {'4', '3', '0', '7', '1'};
 
-	for (i = 0; v[i] != '\0'; i++)
+	for (i = 0; x[i] != '\0'; i++)
 	{
 		for (v = 0; v <= 9; v++)
 
