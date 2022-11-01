@@ -1,3 +1,11 @@
+
+/**
+ * File: 100-set_string.c
+ * Aut: Easy
+ */
+
+
+
 #include "main.h"
 
 /**
