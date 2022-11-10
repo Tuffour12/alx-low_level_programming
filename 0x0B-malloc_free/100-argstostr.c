@@ -1,15 +1,10 @@
 #include <stdlib.h>
 
 /**
- * argstostr - Concatenates all the arguments of the program
- *
- * @ac: Argument total count
- *
- * @av: Pointer to arguments
- *
- * Retunr: Pointer to concatenated string (SUCCESS) or
- * NULL if @ac == 0 or @av == NULL (FAILURE) or
- * NULL if if insufficient memory was available (FAILURE)
+ * *argstostr - convert arguments on command line to strings
+ * @ac: int type
+ * @av: pointer to array
+ * Return: arguments as strings
  */
 
 char *argstostr(int ac, char **av)
