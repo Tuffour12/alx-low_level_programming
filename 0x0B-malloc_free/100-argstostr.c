@@ -1,50 +1,52 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * *argstostr - convert arguments on command line to strings
- * @ac: int type
- * @av: pointer to array
- * Return: arguments as strings
+ * argstostr - Concatenates all the arguments of the program
+ *
+ * @ac: Argument total count
+ *
+ * @av: Pointer to arguments
+ *
+ * Retunr: Pointer to concatenated string (SUCCESS) or
+ * NULL if @ac == 0 or @av == NULL (FAILURE) or
+ * NULL if if insufficient memory was available (FAILURE)
  */
 
 char *argstostr(int ac, char **av)
 {
-	int size, count, count1, count2 = 0;
-	char *ptr;
+	int x, y;
+	int count = 0;
+	int t_count = 0;
+	char *result;
 
 	if (ac == 0 || av == NULL)
+		return ('\0');
+
+	for (x = 0; x < ac; x++)
 	{
-		return (NULL);
+		for (y = 0; av[x][y] != '\0'; y++)
+			t_count++;
+
+		t_count++;
 	}
 
-	for (count = 0; count < ac; count++)
-	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
-		{
-			size += 1;
-		}
-		size += 1;
-	}
-	size += 1;
+	result = malloc(sizeof(char) * t_count + 1);
 
-	ptr = malloc(sizeof(char) * size);
-	if (ptr == NULL)
+	if (result == NULL)
 	{
-		free(ptr);
-		return (NULL);
+		return ('\0');
 	}
-	for (count = 0; count < ac; count++)
+
+	for (x = 0; x < ac; x++)
 	{
-		for (count1 = 0; av[count][count1] != '\0'; count1++)
+		for (y = 0; av[x][y] != '\0'; y++)
 		{
-			ptr[count2] = av[count][count1];
-			count2++;
+			result[count++] = av[x][y];
 		}
-		ptr[count2] = '\n';
-		count2++;
+		result[count++] = '\n';
 	}
-	ptr[count2] = '\0';
-	return (ptr);
+
+	result[t_count] = '\0';
+	return (result);
 }
+
