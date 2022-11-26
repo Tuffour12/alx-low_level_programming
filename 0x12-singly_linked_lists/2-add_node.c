@@ -24,8 +24,8 @@ list_t *add_node(list_t **head, const char *str)
 		free(new_line);
 		return (NULL);
 	}
-	new_line->len = _strlen_recursion(new_line->str);
-	new_Line->next = *head;
+	new->len = _strlen_recursion(new_line->str);
+	new_line->next = *head;
 	*head = new_line;
 
 	return (new_line);
