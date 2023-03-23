@@ -1,0 +1,42 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c file1.c file2.c
+
+# Object files
+OBJ = $(SRC:.c=.o)
+
+# Executable name
+NAME = school
+
+# Command to delete files
+RM = rm -f
+
+# Compile and link
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) -o $(NAME) $(OBJ)
+
+# Clean temporary files
+clean:
+	$(RM) *~ $(NAME)
+
+# Clean object files
+oclean:
+	$(RM) $(OBJ)
+
+# Clean everything
+fclean: clean oclean
+
+# Force recompilation
+re: fclean all
+
+# Compile object files
+%.o: %.c
+	$(CC) -o $@ -c $<
+
+# Prevent errors if a file with the same name exists
+.PHONY: all clean oclean fclean re
+
